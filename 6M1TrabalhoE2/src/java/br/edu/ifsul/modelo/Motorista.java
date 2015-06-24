@@ -118,8 +118,5 @@ public class Motorista implements Serializable {
         return "Motorista{" + "id=" + id + ", Nome=" + Nome + ", Salario=" + Salario + ", CNH=" + CNH + ", CargasPerigosas=" + CargasPerigosas + '}';
     }
     
-    
-    
-    
 
 }
