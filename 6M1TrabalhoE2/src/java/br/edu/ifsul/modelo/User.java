@@ -1,10 +1,12 @@
 package br.edu.ifsul.modelo;
 
+import java.io.Serializable;
+
 /**
- * Not implements
+ * 
  * @author Marcelo Luis Gross
  */
-public class User {
+public class User implements Serializable{
     
     
 }
