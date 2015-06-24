@@ -18,7 +18,7 @@ import org.hibernate.validator.constraints.NotEmpty;
  * @author Marelo Luis Gross
  */
 @Entity
-@Table(name = "Motorista")
+@Table(name = "motorista")
 public class Motorista implements Serializable {
 
     @Id
