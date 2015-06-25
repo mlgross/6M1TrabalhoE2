@@ -12,7 +12,7 @@ import javax.persistence.Table;
 
 /**
  * 
- * @author Marcelo Luis Gross
+ * @author Marcelo
  */
 @Entity
 @Table(name = "caminhao")

@@ -2,7 +2,7 @@ package br.edu.ifsul.modelo;
 
 /**
  * Not Implemented
- * @author Marcelo Luis Gross
+ * @author Marcelo
  */
 public class Viagem {
     

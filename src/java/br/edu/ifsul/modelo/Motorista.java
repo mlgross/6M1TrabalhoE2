@@ -15,7 +15,7 @@ import org.hibernate.validator.constraints.NotEmpty;
 
 /**
  *
- * @author Marelo Luis Gross
+ * @author Marelo
  */
 @Entity
 @Table(name = "motorista")

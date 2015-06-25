@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 /**
  * 
- * @author Marcelo Luis Gross
+ * @author Marcelo
  */
 public class User implements Serializable{
     
