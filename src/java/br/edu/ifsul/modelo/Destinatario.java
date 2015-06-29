@@ -1,9 +1,26 @@
 package br.edu.ifsul.modelo;
 
 /**
- * Not Implemented
+ * 
  * @author Marcelo
  */
 public class Destinatario {
     
+    
+        
+    Integer id;
+    
+    String Cnpj ;
+    
+    String Nome;
+    
+    String Endereco;
+    
+    String Telefone;
+    
+    String Cep;
+    
+    
+    
+            
 }
