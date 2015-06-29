@@ -31,18 +31,18 @@ public class Motorista implements Serializable {
     @Length(max = 50, message = "O nome não pode ultrapassar {max} caracteres")
     @NotEmpty(message = "O nome deve ser informado")
     @Column(name = "nome", length = 50, nullable = false)
-    private String Nome;
+    private String nome;
 
     @NotNull(message = "O salário deve ser informado")
     @Column(name = "salario", nullable = false, columnDefinition = "decimal(12,2)")
-    private Double Salario;
+    private Double salario;
 
     @Column(name = "cnh", length = 2,nullable = false)    
-    private Character CNH;
+    private Character cnh;
 
     @NotNull(message = "A permição deve deve ser informado")
     @Column(name = "cargaperigosas", nullable = false)
-    private Boolean CargasPerigosas;
+    private Boolean cargasPerigosas;
     
 
     /**
@@ -52,35 +52,35 @@ public class Motorista implements Serializable {
     }
 
     public String getNome() {
-        return Nome;
+        return nome;
     }
 
     public void setNome(String Nome) {
-        this.Nome = Nome;
+        this.nome = Nome;
     }
 
     public Double getSalario() {
-        return Salario;
+        return salario;
     }
 
     public void setSalario(Double Salario) {
-        this.Salario = Salario;
+        this.salario = Salario;
     }
 
     public Character getCNH() {
-        return CNH;
+        return cnh;
     }
 
     public void setCNH(Character CNH) {
-        this.CNH = CNH;
+        this.cnh = CNH;
     }
 
     public Boolean isCargasPerigosas() {
-        return CargasPerigosas;
+        return cargasPerigosas;
     }
 
     public void setCargasPerigosas(Boolean CargasPerigosas) {
-        this.CargasPerigosas = CargasPerigosas;
+        this.cargasPerigosas = CargasPerigosas;
     }
 
     public Integer getId() {
@@ -115,7 +115,7 @@ public class Motorista implements Serializable {
 
     @Override
     public String toString() {
-        return "Motorista{" + "id=" + id + ", Nome=" + Nome + ", Salario=" + Salario + ", CNH=" + CNH + ", CargasPerigosas=" + CargasPerigosas + '}';
+        return "Motorista{" + "id=" + id + ", Nome=" + nome + ", Salario=" + salario + ", CNH=" + cnh + ", CargasPerigosas=" + cargasPerigosas + '}';
     }
     
 

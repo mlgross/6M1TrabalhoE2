@@ -26,74 +26,74 @@ public class Caminhao implements Serializable{
     @SequenceGenerator(name = "seq_caminhao", sequenceName = "seq_caminhao_id", 
             allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_caminhao")
-    private Integer Id;
+    private Integer id;
     
     @Length(max = 50, message = "O nome não pode ultrapassar {max} caracteres")
     @NotEmpty(message = "O nome deve ser informado")
     @Column(name = "nome",length = 50, nullable = false, unique = true)      
-    private String Nome;
+    private String nome;
     
     @Length(max = 8, message = "A placa não pode ultrapassar {max} caracteres")
     @NotEmpty(message = "A placa deve ser informado")
     @Column(name = "placa",length = 8, nullable = false, unique = true)     
-    private String Placa;
+    private String placa;
     
     @NotNull(message = "A quilometragem deve ser informada")
     @Column(name = "kmrodados", length = 12, nullable = false, unique = true)         
-    private Integer Kmrodados;
+    private Integer kmrodados;
     
     @NotNull(message = "A capacidade deve ser informada")
     @Column(name = "capacidade", nullable = false, columnDefinition = "decimal(12,2)")        
-    private Double Capacidade;
+    private Double capacidade;
     
     //Gerated Code
     public Caminhao() {
     }
 
     public Integer getId() {
-        return Id;
+        return id;
     }
 
     public void setId(Integer Id) {
-        this.Id = Id;
+        this.id = Id;
     }
 
     public String getNome() {
-        return Nome;
+        return nome;
     }
 
     public void setNome(String Nome) {
-        this.Nome = Nome;
+        this.nome = Nome;
     }
 
     public String getPlaca() {
-        return Placa;
+        return placa;
     }
 
     public void setPlaca(String Placa) {
-        this.Placa = Placa;
+        this.placa = Placa;
     }
 
     public Integer getKmrodados() {
-        return Kmrodados;
+        return kmrodados;
     }
 
     public void setKmrodados(Integer Kmrodados) {
-        this.Kmrodados = Kmrodados;
+        this.kmrodados = Kmrodados;
     }
 
     public Double getCapacidade() {
-        return Capacidade;
+        return capacidade;
     }
 
     public void setCapacidade(Double Capacidade) {
-        this.Capacidade = Capacidade;
+        this.capacidade = Capacidade;
     }
 
     @Override
     public int hashCode() {
         int hash = 3;
-        hash = 43 * hash + Objects.hashCode(this.Id);
+        hash = 43 * hash + Objects.hashCode(this.id);
         return hash;
     }
 
@@ -106,7 +106,7 @@ public class Caminhao implements Serializable{
             return false;
         }
         final Caminhao other = (Caminhao) obj;
-        if (!Objects.equals(this.Id, other.Id)) {
+        if (!Objects.equals(this.id, other.id)) {
             return false;
         }
         return true;
@@ -114,7 +114,7 @@ public class Caminhao implements Serializable{
 
     @Override
     public String toString() {
-        return "Caminhao{" + "Id=" + Id + ", Nome=" + Nome + ", Placa=" + Placa + ", Kmrodados=" + Kmrodados + ", Capacidade=" + Capacidade + '}';
+        return "Caminhao{" + "Id=" + id + ", Nome=" + nome + ", Placa=" + placa + ", Kmrodados=" + kmrodados + ", Capacidade=" + capacidade + '}';
     }
     
     

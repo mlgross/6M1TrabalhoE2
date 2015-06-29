@@ -31,27 +31,27 @@ public class Destinatario implements Serializable {
     @CNPJ(message = "CNPJ inválido")
     @NotEmpty(message = "CNPJ não pode ser nulo")    
     @Column(name = "cnpj", length = 18, nullable = false)      
-    private String Cnpj ;
+    private String cnpj ;
     
     @Length(max = 50, message = "O nome não pode ultrapassar {max} caracteres")
     @NotEmpty(message = "O nome deve ser informado")
     @Column(name = "nome",length = 50, nullable = false, unique = true)          
-    private String Nome;
+    private String nome;
     
     @NotEmpty(message = "O endereço deve ser informado")
     @Length(max = 50, message = "O  endereço não deve ultrapassar {max} caracteres")
     @Column(name = "endereco",length = 50, nullable = false)    
-    private String Endereco;
+    private String endereco;
     
     @Length(max = 14,message = "O telefone não deve ter mais que {max} caracteres")
     @NotEmpty(message = "O telefone deve ser informado")
     @Column(name = "telefone",length = 14, nullable = false)        
-    private String Telefone;
+    private String telefone;
     
-    @NotEmpty(message = "O cep deve ser informado")
-    @Length(max = 9, message = "O  cep não deve ultrapassar {max} caracteres")
+    @NotEmpty(message = "O CEP deve ser informado")
+    @Length(max = 9, message = "O  CEP não deve ultrapassar {max} caracteres")
     @Column(name = "cep",length = 9, nullable = false)  
-    private String Cep;
+    private String cep;
     
     //Gerated Code
     public Destinatario() {
@@ -66,43 +66,43 @@ public class Destinatario implements Serializable {
     }
 
     public String getCnpj() {
-        return Cnpj;
+        return cnpj;
     }
 
     public void setCnpj(String Cnpj) {
-        this.Cnpj = Cnpj;
+        this.cnpj = Cnpj;
     }
 
     public String getNome() {
-        return Nome;
+        return nome;
     }
 
     public void setNome(String Nome) {
-        this.Nome = Nome;
+        this.nome = Nome;
     }
 
     public String getEndereco() {
-        return Endereco;
+        return endereco;
     }
 
     public void setEndereco(String Endereco) {
-        this.Endereco = Endereco;
+        this.endereco = Endereco;
     }
 
     public String getTelefone() {
-        return Telefone;
+        return telefone;
     }
 
     public void setTelefone(String Telefone) {
-        this.Telefone = Telefone;
+        this.telefone = Telefone;
     }
 
     public String getCep() {
-        return Cep;
+        return cep;
     }
 
     public void setCep(String Cep) {
-        this.Cep = Cep;
+        this.cep = Cep;
     }
 
     @Override
@@ -129,7 +129,7 @@ public class Destinatario implements Serializable {
 
     @Override
     public String toString() {
-        return "Destinatario{" + "id=" + id + ", Cnpj=" + Cnpj + ", Nome=" + Nome + ", Endereco=" + Endereco + ", Telefone=" + Telefone + ", Cep=" + Cep + '}';
+        return "Destinatario{" + "id=" + id + ", Cnpj=" + cnpj + ", Nome=" + nome + ", Endereco=" + endereco + ", Telefone=" + telefone + ", Cep=" + cep + '}';
     }
     
     
