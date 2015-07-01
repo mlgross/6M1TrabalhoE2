@@ -1,0 +1,1 @@
+"C:\Program Files\glassfish-4.1\glassfish\bin"\asadmin add-resources C:\Users\Acefire\Documents\NetBeansProjects\6M1TrabalhoE2\setup\glassfish-resources.xml
